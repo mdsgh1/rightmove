@@ -21,6 +21,11 @@ public class HomePage extends BaseSetup {
     private By txt_searchbox = By.name("typeAheadInputField");
     private By btn_forSale = By.xpath("//button[normalize-space()='For Sale']");
 
+    public void textBoxCheck(){
+        d.findElement(txt_searchbox).isDisplayed();
+        d.findElement(txt_searchbox).isEnabled();
+    }
+
     public void enterLocationandclick (String address){
             d.findElement(txt_searchbox).sendKeys(address);
             d.findElement(btn_forSale).click();
