@@ -1,6 +1,6 @@
 Feature: Test HomePage functionality
 
-  Scenario Outline: Check that the input box is visible and editable on homeage with valid postcode or cityname
+  Scenario Outline: Check that the input box is visible and editable on homepage with valid postcode or cityname
     Given browser is open
     And user is on homepage
     And input box is visible and editable
